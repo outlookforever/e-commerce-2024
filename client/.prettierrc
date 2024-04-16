@@ -10,8 +10,12 @@
 	"bracketSpacing": true,
 	"importOrder": [
 		"<THIRD_PARTY_MODULES>",
-		"^@/components/(.*)$",
-		"^@/pages/(.*)$",
+		"^./src/(.*)$",
+		"./src/components/(.*)$",
+		"./src/routes/(.*)$",
+		"./src/pages/(.*)$",
+		"./src/assets/(.*)$",
+
 		"^@/layout/(.*)$",
 		"^@/ui/(.*)$",
 		"^@/providers/(.*)$",
