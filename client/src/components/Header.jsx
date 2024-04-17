@@ -2,18 +2,21 @@ import React from 'react'
 import { FaShoppingCart } from 'react-icons/fa'
 import { FaRegCircleUser } from 'react-icons/fa6'
 import { GrSearch } from 'react-icons/gr'
+import { Link } from 'react-router-dom'
 
 import Logo from './Logo'
 
 const Header = () => {
 	return (
-		<header className='h-16 shadow-sm'>
+		<header className='h-16 shadow-sm bg-white'>
 			<div className='container mx-auto h-full flex items-center px-4 justify-between'>
 				<div className=''>
-					<Logo
-						w={100}
-						h={50}
-					/>
+					<Link to='/'>
+						<Logo
+							w={100}
+							h={50}
+						/>
+					</Link>
 				</div>
 				<div className='hidden lg:flex items-center w-full justify-between max-w-sm border rounded-full focus-within:shadow-sm pl-2'>
 					<input
@@ -38,9 +41,12 @@ const Header = () => {
 						</div>
 					</div>
 					<div className=''>
-						<button className='px-3 py-1 bg-red-600 rounded-full text-white hover:bg-red-700'>
+						<Link
+							to='/login'
+							className='px-3 py-1 bg-red-600 rounded-full text-white hover:bg-red-700'
+						>
 							Login
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>
