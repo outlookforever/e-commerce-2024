@@ -23,6 +23,7 @@ module.exports = {
 			'warn',
 			{ allowConstantExport: true }
 		],
-		'prettier/prettier': 1
+		'prettier/prettier': 0,
+		'no-console': 1
 	}
 }

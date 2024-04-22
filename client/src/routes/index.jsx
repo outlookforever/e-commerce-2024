@@ -1,8 +1,9 @@
-import ForgotPassword from 'pages/ForgotPassword'
-import Home from 'pages/Home'
-import Login from 'pages/Login'
-import SignUp from 'pages/SignUp'
 import { createBrowserRouter } from 'react-router-dom'
+
+import ForgotPassword from '@pages/ForgotPassword'
+import Home from '@pages/Home'
+import Login from '@pages/Login'
+import SignUp from '@pages/SignUp'
 
 import App from '../App'
 

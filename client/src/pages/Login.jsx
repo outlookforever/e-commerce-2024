@@ -1,16 +1,17 @@
-import loginIcons from 'assets/signin.gif'
 import React, { useState } from 'react'
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
+
+import loginIcons from '@assets/signin.gif'
 
 const Login = () => {
 	const [showPassword, setShowPassword] = useState(false)
 
 	return (
 		<section id='login'>
-			<div className='mx-auto container p-4'>
-				<div className='bg-white p-5 w-full max-w-sm mx-auto'>
-					<div className='w-20 h-20 mx-auto'>
+			<div className='container mx-auto p-4'>
+				<div className='mx-auto w-full max-w-sm bg-white p-5'>
+					<div className='mx-auto h-20 w-20'>
 						<img
 							src={loginIcons}
 							alt='login'
@@ -21,7 +22,7 @@ const Login = () => {
 							<label>Email:</label>
 							<div className='bg-slate-200 p-2'>
 								<input
-									className='w-full h-full outline-none bg-transparent'
+									className='h-full w-full bg-transparent outline-none'
 									type='email'
 									placeholder='Enter email'
 								/>
@@ -29,9 +30,9 @@ const Login = () => {
 						</div>
 						<div className=''>
 							<label>Email:</label>
-							<div className='bg-slate-200 p-2 flex'>
+							<div className='flex bg-slate-200 p-2'>
 								<input
-									className='w-full h-full outline-none bg-transparent'
+									className='h-full w-full bg-transparent outline-none'
 									type={showPassword ? 'text' : 'password'}
 									placeholder='Enter password'
 								/>
@@ -50,12 +51,12 @@ const Login = () => {
 							</div>
 							<Link
 								to={'/forgot-password'}
-								className='block w-fit ml-auto hover:underline hover:text-red-600 transition-all'
+								className='ml-auto block w-fit transition-all hover:text-red-600 hover:underline'
 							>
 								Forgot password
 							</Link>
 						</div>
-						<button className='bg-red-600 hover:bg-red-700 text-white w-full px-6 py-2 max-w-[200px] rounded-full  transition-all mx-auto block mt-6'>
+						<button className='mx-auto mt-6 block w-full max-w-[200px] rounded-full bg-red-600 px-6  py-2 text-white transition-all hover:bg-red-700'>
 							Login
 						</button>
 					</form>
@@ -63,7 +64,7 @@ const Login = () => {
 						Don`t have account?{' '}
 						<Link
 							to='/sign-up'
-							className='underline hover:text-red-600 transition-all'
+							className='underline transition-all hover:text-red-600'
 						>
 							Sign up
 						</Link>
