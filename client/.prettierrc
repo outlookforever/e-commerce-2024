@@ -17,6 +17,7 @@
 		"@components/(.*)$",
 		"@routes/(.*)$",
 		"@pages/(.*)$",
+		"@helpers/(.*)$",
 		"@assets/(.*)$",
 
 		"@scss/(.*)$",

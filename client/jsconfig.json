@@ -5,6 +5,7 @@
       "@components/*": ["components/*"],
       "@routes/*": ["routes/*"],
       "@pages/*": ["pages/*"],
+      "@helpers/*": ["helpers/*"],
       "@assets/*": ["assets/*"],
       "@scss/*": ["scss/*"]
     }

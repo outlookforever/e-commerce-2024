@@ -24,6 +24,6 @@ module.exports = {
 			{ allowConstantExport: true }
 		],
 		'prettier/prettier': 0,
-		'no-console': 1
+		'no-console': 0
 	}
 }
